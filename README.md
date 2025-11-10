@@ -37,7 +37,84 @@ Deletion: Tasks that are completed can be checked off at will, clearing up space
 
 
 
+# 📋 Full-Stack To-Do App with User Authentication
 
+## 🚀 Overview
+
+This is a **full-stack web application** designed to help users manage their personal and professional tasks efficiently. It emphasizes time management, focus improvement, and organization by providing a persistent, personalized to-do list.
+
+The application includes robust user authentication and utilizes a database to ensure all user data and tasks are securely saved and retrieved upon login.
+
+
+## ✨ Key Features
+
+* **User Authentication:** Secure login and registration system to give each user a personalized space for their tasks.
+* **Persistent Storage:** All tasks are stored in a relational database (MySQL/SQL), ensuring data is saved even after logging out.
+* **Task Management (CRUD):**
+    * **Create:** Add new tasks easily.
+    * **Update/Edit:** Modify the details of existing tasks at any time.
+    * **Delete/Complete:** Check off or permanently remove completed tasks.
+* **Priority Organization:** Tasks are listed and organized by their priority level for better focus.
+* **Integrated Timer:** Set a timer for individual tasks to improve time management. Includes a custom sound and pop-up banner notification upon completion.
+* **Unlimited Tasks:** Users can create an unlimited number of tasks to adhere to any schedule.
+
+## 🛠️ Tech Stack
+
+This application is built using a classic LAMP-stack inspired architecture:
+
+* **Frontend:** HTML5, CSS (specifically `styles.css` and `style1.css`), JavaScript
+* **Backend:** PHP (using files like `login.php` and `ToDo.php`)
+* **Database:** MySQL/SQL (implied by file structure, likely for user and task data)
+
+## ⚙️ Installation & Setup
+
+To run this application locally, you will need a web server environment that supports PHP and MySQL, such as XAMPP, WAMP, or MAMP.
+
+### Prerequisites
+
+1.  A local web server environment (e.g., XAMPP).
+2.  A configured MySQL database instance.
+
+### Setup Steps
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/PrinceShawtz/Full-stack-todo-app-with-user-login-and-database.git](https://github.com/PrinceShawtz/Full-stack-todo-app-with-user-login-and-database.git)
+    cd Full-stack-todo-app-with-user-login-and-database
+    ```
+
+2.  **Server Placement:**
+    Place the cloned directory into your web server's root directory (e.g., `htdocs` for XAMPP).
+
+3.  **Database Configuration:**
+    * Create a new MySQL database (e.g., `todo_db`).
+    * Run the provided SQL script (`upgrade_tables_mysql_4_1_2+.sql` or similar) to set up the necessary tables for users and tasks.
+    * **Crucially:** Update the database connection details within your PHP files (`login.php`, `ToDo.php`, etc.) to match your local database credentials (server name, username, password, database name).
+
+4.  **Access the Application:**
+    Open your browser and navigate to the local server path:
+    ```
+    http://localhost/Full-stack-todo-app-with-user-login-and-database/login.html
+    ```
+    You will need to register first before you can access the main to-do list page (`ToDo.html`).
+
+## 📚 Documentation & Diagrams
+
+The repository includes several detailed design and planning documents:
+
+* `Entity Relationship Diagram.pdf`
+* `Test Cases.pdf`
+* `Use Cases & Sequence Diagrams.pdf`
+* `Wireframes and Test Scenarios.pdf`
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repository, open issues, or submit pull requests with improvements.
+
+## 📄 License
+
+*(The license information is not explicitly provided in the repository's files, but standard practice is to use a common open-source license.)*
+Please refer to the repository owner for licensing details.
 
 
 
